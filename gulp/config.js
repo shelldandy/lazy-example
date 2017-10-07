@@ -9,8 +9,8 @@ module.exports = {
   directories: {
     src: {
       base: 'src',
-                  markup: 'src/pug',
-            fonts: 'src/assets/fonts',
+      markup: 'src/pug',
+      fonts: 'src/assets/fonts',
       icons: 'src/assets/icons',
       images: 'src/assets/images',
       scripts: 'src/assets/js',
@@ -23,7 +23,7 @@ module.exports = {
       icons: 'dist/assets/icons',
       images: 'dist/assets/images',
       scripts: 'dist/assets/js',
-      styles: 'dist/assets/css',
+      styles: 'dist/assets/css'
     }
   },
   project: {
@@ -31,8 +31,8 @@ module.exports = {
     cssVendorFile: 'src/assets/styles/vendor.scss',
     jsMainFile: 'src/assets/js/main.js',
     fontFiles: [
-      'src/assets/fonts/**/*',
-      
+      'src/assets/fonts/**/*'
+
     ]
   },
   onError: error => {
