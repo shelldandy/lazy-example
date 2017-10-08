@@ -34,3 +34,4 @@ iTermocil.yml
 .tmuxinator
 
 /releases/*
+.publish

@@ -12,7 +12,8 @@
     "lint:scss": "stylelint ./src/styles/**/*.scss",
     "lint": "npm run lint:js; npm run lint:scss",
     "debug": "NODE_ENV=debug webpack --config gulp/webpack.config.js",
-    "prod": "NODE_ENV=production gulp build"
+    "prod": "NODE_ENV=production gulp build --prod",
+    "deploy": "NODE_ENV=production gulp deploy --prod"
   },
   "dependencies": {
     "babel-core": "^6.26.0",
@@ -27,6 +28,7 @@
     "gulp-autoprefixer": "^4.0.0",
     "gulp-csscomb": "^3.0.8",
     "gulp-cssnano": "^2.1.2",
+    "gulp-gh-pages": "^0.5.4",
     "gulp-group-css-media-queries": "^1.2.0",
     "gulp-html-prettify": "^0.0.1",
     "gulp-if": "^2.0.2",
