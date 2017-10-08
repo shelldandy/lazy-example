@@ -4189,6 +4189,13 @@ loud-rejection@^1.0.0:
     currently-unhandled "^0.4.1"
     signal-exit "^3.0.0"
 
+lqip-pug@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/lqip-pug/-/lqip-pug-1.0.0.tgz#07215f32143ce20c7124b7b2f3a4935b045674a2"
+  dependencies:
+    deasync "^0.1.10"
+    sharp "^0.18.4"
+
 lru-cache@2:
   version "2.7.3"
   resolved "https://registry.yarnpkg.com/lru-cache/-/lru-cache-2.7.3.tgz#6d4524e8b955f95d4f5b58851ce21dd72fb4e952"
