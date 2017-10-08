@@ -22,6 +22,5 @@ gulp.task('markup', () =>
         blur: name => blurry.blur(name)
       }
     })).on('error', config.onError)
-    .pipe($.htmlPrettify())
     .pipe(gulp.dest(config.directories.dist.markup))
 )

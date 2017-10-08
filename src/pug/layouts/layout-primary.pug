@@ -11,10 +11,8 @@ html(lang='en')
     link(rel='icon' href='assets/images/favicon-32x32.png' type='image/png' sizes='32x32')
     link(rel='shortcut icon' href='assets/images/favicon.ico')
     if production
-      link(rel='stylesheet', href='assets/css/vendor.min.css')
       link(rel='stylesheet', href='assets/css/main.min.css')
     else
-      link(rel='stylesheet', href='assets/css/vendor.css')
       link(rel='stylesheet', href='assets/css/main.css')
     block head
       //- If extra head content is necessary per page, it can be added per screen
