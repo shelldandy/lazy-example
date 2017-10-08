@@ -30,6 +30,9 @@ a {
   color: inherit;
   transition: $trns-duration;
   border-bottom: 1px solid;
+  &:hover, &:active {
+    color: $main-color;
+  }
   &:focus {
     outline: 1px dotted;
   }
