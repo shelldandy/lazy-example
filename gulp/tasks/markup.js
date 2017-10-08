@@ -24,3 +24,14 @@ gulp.task('markup', () =>
     })).on('error', config.onError)
     .pipe(gulp.dest(config.directories.dist.markup))
 )
+
+gulp.task('critical', () =>
+  gulp.src(config.directories.dist.markup + '/*.html')
+    .pipe($.htmlReplace({
+      cssInline: {
+        src: gulp.src(config.directories.dist.styles + '/main.min.css'),
+        tpl: '<style>%s</style>'
+      }
+    }))
+    .pipe(gulp.dest(config.directories.dist.markup))
+)
