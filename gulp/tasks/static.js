@@ -6,8 +6,11 @@ gulp.task('clean', () =>
   del([config.directories.dist.base])
 )
 
-gulp.task('clean:css', () =>
-  del([config.directories.dist.styles])
+gulp.task('clean:production', () =>
+  del([
+    config.directories.dist.styles,
+    config.directories.dist.scripts
+  ])
 )
 
 gulp.task('images', () =>

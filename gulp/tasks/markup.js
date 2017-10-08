@@ -31,6 +31,10 @@ gulp.task('critical', () =>
       cssInline: {
         src: gulp.src(config.directories.dist.styles + '/main.min.css'),
         tpl: '<style>%s</style>'
+      },
+      jsInline: {
+        src: gulp.src(config.directories.dist.scripts + '/main.min.js'),
+        tpl: '<script>%s</script>'
       }
     }))
     .pipe(gulp.dest(config.directories.dist.markup))

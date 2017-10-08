@@ -14,7 +14,7 @@ const OUTPUT_PATH = cwd() + '/' + config.directories.dist.scripts
 let plugins = []
 
 const productionPlugins = [
-  new UglifyJSPlugin({sourceMap: true}),
+  new UglifyJSPlugin(),
   new webpack.DefinePlugin({
     'process.env': { 'NODE_ENV': JSON.stringify('production') }
   })
@@ -28,7 +28,7 @@ if (debug) plugins = [...plugins, ...debugPlugins]
 
 const CONFIG = {
   entry: ENTRY_PATH,
-  devtool: production ? 'source-map' : 'inline-source-map',
+  devtool: production ? false : 'inline-source-map',
   module: {
     rules: [{
       test: /\.js$/,

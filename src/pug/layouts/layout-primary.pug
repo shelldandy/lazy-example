@@ -29,7 +29,8 @@ html(lang='en')
       //- If extra footer content is necessary per page, it can be added per screen
 
     if production
-      script(src='assets/js/main.min.js' async)
+      // build:jsInline
+      // endbuild
     else
       script(src='assets/js/main.js')
     block scripts
