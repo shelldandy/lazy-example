@@ -3,7 +3,4 @@ mixin svg(filename)
   !=icon(filename)
 
 mixin img(name)
-  if production
-    !=blur(name)
-  else
-    img(src=`assets/images/${name}`)
+  !=blur(name)

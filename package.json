@@ -45,6 +45,7 @@
     "sharp": "^0.18.4",
     "uglifyjs-webpack-plugin": "^0.4.6",
     "vinyl-ftp": "^0.6.0",
+    "webfontloader": "^1.6.28",
     "webpack": "^3.6.0",
     "webpack-stream": "^4.0.0",
     "yargs": "^9.0.1"
