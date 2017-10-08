@@ -11,12 +11,8 @@ const debug = process.env.NODE_ENV === 'debug'
 const ENTRY_PATH = cwd() + '/' + config.project.jsMainFile
 const OUTPUT_PATH = cwd() + '/' + config.directories.dist.scripts
 
-let plugins = [
-  new webpack.optimize.CommonsChunkPlugin({
-    name: 'vendor',
-    minChunks: module => /node_modules/.test(module.resource)
-  })
-]
+let plugins = []
+
 const productionPlugins = [
   new UglifyJSPlugin({sourceMap: true}),
   new webpack.DefinePlugin({

@@ -24,6 +24,7 @@
     "browser-sync": "^2.18.12",
     "deasync": "^0.1.10",
     "del": "^3.0.0",
+    "fontfaceobserver": "^2.0.13",
     "gulp": "github:gulpjs/gulp#4.0",
     "gulp-autoprefixer": "^4.0.0",
     "gulp-csscomb": "^3.0.8",
@@ -47,7 +48,6 @@
     "sharp": "^0.18.4",
     "uglifyjs-webpack-plugin": "^0.4.6",
     "vinyl-ftp": "^0.6.0",
-    "webfontloader": "^1.6.28",
     "webpack": "^3.6.0",
     "webpack-stream": "^4.0.0",
     "yargs": "^9.0.1"
